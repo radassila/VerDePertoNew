@@ -1,20 +1,20 @@
 @charset "UTF-8";
-/*!
-* Start Bootstrap - Agency v7.0.12 (https://startbootstrap.com/theme/agency)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap  v5.2.3 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
+
+ .email{
+ 
+  height: 2.5rem;
+  width: 2.5rem;
+
+ }
+
 
  #mapa{
   height: 220px;
   width: 320px;
   margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 0.5px solid #058746;
  }
 
  img.verde{
@@ -670,8 +670,9 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  min-width: 326px;
+  min-width: 300px;
   height: 225px;
+  border-radius: 4px;
 }
 
 .img-thumbnail {
@@ -7736,6 +7737,7 @@ textarea.form-control-lg {
 
 .mb-4 {
   margin-bottom: 1.5rem !important;
+  
 }
 
 .mb-5 {
@@ -10926,7 +10928,7 @@ p {
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 4rem;
-  text-align: justify;
+  text-align: center;
 }
 
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
@@ -10938,6 +10940,19 @@ p {
   margin-bottom: 4rem;
   text-align: justify;
 }
+
+
+.claro {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 4rem;
+  text-align: justify;
+  color: #fff;
+}
+
 
 @media (min-width: 768px) {
   section {
@@ -10965,7 +10980,7 @@ p {
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: #212529;
-  width: 414px;
+  width: 100%;
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -11084,17 +11099,19 @@ header.masthead .masthead-heading {
   position: relative;
   display: block;
   margin: 0 auto;
+
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   display: flex;
   position: absolute;
   width: 100%;
   height: 100%;
-  background:  #00E031;
+  background:  #008f1fb8;
   align-items: center;
   justify-content: center;
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
+
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 1.25rem;
@@ -11106,7 +11123,7 @@ header.masthead .masthead-heading {
 #portfolio .portfolio-item .portfolio-caption {
   padding: 1.5rem;
   text-align: center;
-  background-color: #fff;
+  background-color: #6c757d17;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
@@ -11346,7 +11363,7 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+  background-image: url("../assets/img/map-image\ .png");
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
