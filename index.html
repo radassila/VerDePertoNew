@@ -5,10 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="Webapp VerDePerto" />
         <meta name="author" content="Radássila" />
-        <meta name="theme-color" content="#008F1F" />
         <title>VerDePerto</title>
         <!-- Favicon-->
-        <link rel="manifest" href="manifest.json" />
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -16,7 +14,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link rel="stylesheet" href="css/styles.css" />
+        <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation assets/img/navbar-logo.svg --> 
@@ -85,8 +83,13 @@
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
+
+
                     <h2 class="section-heading text-uppercase">Áreas Verdes</h2>
                     <h3 class="section-subheading text-muted" id="verde">Explore aqui as áreas verdes mais próximas!</h3>
+
+                    <div id="cityName">Nome da cidade:</div>
+                    <button id="cid" onclick="getLocationAndCity()">Obter Nome da Cidade</button>
 
                     <div id="cidades">
                             <form id="meuFormulario">
@@ -570,9 +573,7 @@
             </div>
         </div>
         <!-- Bootstrap core JS-->
-    
-    </body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
@@ -580,5 +581,7 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    
+        <link rel="manifest" href="manifest.json">
+
+    </body>
 </html>
