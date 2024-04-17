@@ -15,6 +15,8 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
     </head>
     <body id="page-top">
         <!-- Navigation assets/img/navbar-logo.svg --> 
@@ -52,13 +54,16 @@
                     <h3 class="section-subheading text-muted"> Diariamente, pessoas que estão em áreas urbanas densamente povoadas enfrentam dificuldades para encontrar espaços verdes e parques onde possam relaxar, praticar atividades físicas ou simplesmente desfrutar da natureza. Isso pode levar a níveis mais altos de estresse, falta de atividade física e desconexão com a natureza. O VerDePerto tem como propósito ajudar a população a localizar e explorar áreas verdes em suas cidades, e os principais benefícios são:</h3>
                 </div>
                 <div class="row text-center">
+
+        
+                        <p class="text-muted" style="display: none;">longitude e altitude</p>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Conscientização ambiental</h4>
-                        <p class="text-muted">A consciência ambiental é importante porque tem efeitos positivos na para o planeta e para a qualidade de vida das pessoas. Uma das coisas mais importante que a consciência ambiental faz é informar as pessoas sobre os perigos do consumo excessivo que praticamos no dia a dia.</p>
+                        <p class="text-muted">A consciência ambiental é importante porque tem efeitos positivos na para o planeta e para a qualidade de vida das pessoas. Uma das coisas mais importante que a consciência ambiental faz é informar as pessoas sobre os perigos do consumo excessivo que praticamos no dia a dia..</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -86,12 +91,19 @@
 
 
                     <h2 class="section-heading text-uppercase">Áreas Verdes</h2>
-                    <h3 class="section-subheading text-muted" id="verde">Explore aqui as áreas verdes mais próximas!</h3>
+                    <h3 class="section-subheading text-muted" id="verde">Explore aqui as áreas verdes mais próximas da sua localização!</h3>
 
-                    <div id="cityName">Nome da cidade:</div>
+
+                    <div id="cityName">Nome da cidade:
+                    </div>
                     <button id="cid" onclick="getLocationAndCity()">Obter Nome da Cidade</button>
 
+                    <p></p>
+
+                    <div id="map"></div>
+
                     <div id="cidades">
+
                             <form id="meuFormulario">
                                 <label for="opcao">Selecione sua cidade:</label>
                                 <select id="cid">
@@ -132,7 +144,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Parque Estadual de Dois Irmãos</div>
+                                <div class="portfolio-caption-heading">Dois Irmãos</div>
                                 <div class="portfolio-caption-subheading text-muted">Recife-PE</div>
                             </div>
                         </div>
@@ -162,7 +174,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Parque Santana - Ariano Suassuna</div>
+                                <div class="portfolio-caption-heading">Parque Santana</div>
                                 <div class="portfolio-caption-subheading text-muted">Recife-PE</div>
                             </div>
                         </div>
